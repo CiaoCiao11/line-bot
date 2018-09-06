@@ -40,8 +40,8 @@ def handle_message(event):
     r='我看不懂你說什麼'
     if '給我貼圖' in msg:
         sticker_message = StickerSendMessage(
-            package_id='34',
-            sticker_id='2'
+            package_id='2',
+            sticker_id='34'
          )
         line_bot_api.reply_message(
         event.reply_token,
