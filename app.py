@@ -48,7 +48,10 @@ def handle_message(event):
         r='想訂位是吧'
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=r))
+        StickerSendMessage(
+    package_id='1',
+    sticker_id='1'
+))
 
 
 if __name__ == "__main__":
